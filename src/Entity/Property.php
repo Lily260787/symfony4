@@ -9,6 +9,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Property
 {
+
+    const HEAT = [
+        0 => "electric",
+        1 => "gaz"
+    ];
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -77,9 +82,13 @@ class Property
     private $sold;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="datetime", options={"default": false})
      */
     private $created_at;
+
+    public function __construct(){
+        $this->created_at = new \Datetime();
+    }
 
     public function getId(): ?int
     {
@@ -170,12 +179,12 @@ class Property
         return $this;
     }
 
-    public function getHear(): ?int
+    public function getHeat(): ?int
     {
         return $this->hear;
     }
 
-    public function setHear(?int $hear): self
+    public function setHeat(?int $hear): self
     {
         $this->hear = $hear;
 
