@@ -79,7 +79,7 @@ class Property
     /**
      * @ORM\Column(type="boolean")
      */
-    private $sold;
+    private $sold = false;
 
     /**
      * @ORM\Column(type="datetime", options={"default": false})

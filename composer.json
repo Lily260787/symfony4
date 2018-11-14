@@ -8,6 +8,7 @@
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/asset": "*",
         "symfony/console": "*",
+        "symfony/debug-bundle": "4.1.*",
         "symfony/expression-language": "*",
         "symfony/flex": "^1.1",
         "symfony/form": "*",
@@ -15,6 +16,7 @@
         "symfony/monolog-bundle": "^3.1",
         "symfony/orm-pack": "*",
         "symfony/process": "*",
+        "symfony/profiler-pack": "^1.0",
         "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
         "symfony/swiftmailer-bundle": "^3.1",
@@ -28,8 +30,8 @@
         "symfony/debug-pack": "*",
         "symfony/dotenv": "*",
         "symfony/maker-bundle": "^1.0",
-        "symfony/profiler-pack": "*",
         "symfony/test-pack": "*",
+        "symfony/var-dumper": "4.1.*",
         "symfony/web-server-bundle": "*"
     },
     "config": {
